@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Frontend Fundamental</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .content {
+        height: 40px;
+        width: 100%;
+      }
+
+      #red {
+        background-color: red;
+      }
+      #green {
+        background-color: green;
+      }
+      #blue {
+        background-color: blue;
+      }
+      #yellow {
+        background-color: yellow;
+      }
+      #purple {
+        background-color: purple;
+      }
+      #grey {
+        background-color: grey;
+      }
+
+      @media (min-width: 600px) {
+        .content {
+          width: calc(100% / 2);
+        }
+      }
+      @media (min-width: 960px) {
+        .content {
+          width: calc(100% / 3);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content" id="red"></div>
+      <div class="content" id="green"></div>
+      <div class="content" id="blue"></div>
+      <div class="content" id="yellow"></div>
+      <div class="content" id="purple"></div>
+      <div class="content" id="grey"></div>
+    </div>
+  </body>
+</html>
